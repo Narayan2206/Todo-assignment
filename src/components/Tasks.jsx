@@ -17,6 +17,8 @@ const Tasks = () => {
   const dispatch = useDispatch();
   let tasksArr = [];
 
+  // * Based on the filterValue , tasks are filtered on the basis of whether they are completed or not.
+
   if (filterValue === "completedTasks") {
     tasksArr = tasks.filter((task) => task.isComplete);
   } else if (filterValue === "remainingTasks") {

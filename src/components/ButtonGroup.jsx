@@ -6,6 +6,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeValue } from "../features/filterSlice.js";
 
 const ButtonGroup = () => {
+
+  // * The purpose of the buttons is to display task based on complpetion
+
   const filterValue = useSelector((state) => state.filter.value);
   const dispatch = useDispatch();
 
